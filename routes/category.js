@@ -3,7 +3,6 @@ const connection = require('../connection');
 const router = express.Router();
 var auth = require('../services/authentication');
 var checkRole = require('../services/checkRole');
-const { route } = require('..');
 
 router.post('/add', auth.authenticateToken, checkRole.checkRole, (req, ress, next) => {
     let categoty = req.body;
@@ -19,7 +18,7 @@ router.post('/add', auth.authenticateToken, checkRole.checkRole, (req, ress, nex
 })
 
 router.get('/get', auth.authenticateToken, (req, ress, next) => {
-    let categoty = req.body;
+    let category = req.body;
     query = "select *from category order by name";
     connection.query(query, (err, results) => {
         if(!err){
