@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MatDialog, MatDialogConfig } from "@angular/material/dialog"
+import { LoginComponent } from '../telas/login/login.component';
 
 @Component({
   selector: 'app-home',
@@ -7,12 +9,18 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
-  constructor()
-  { 
+  constructor(private dialog:MatDialog)
+  {
   }
 
   SigNupClient(){
-    console.log('testanto')
+    // console.log('teste ')
+    const dialogConfig = new MatDialogConfig()
+    dialogConfig.width = '500px',
+    // dialogConfig.height = '500px',
+    dialogConfig.disableClose = false,
+    dialogConfig.hasBackdrop = false
+    this.dialog.open(LoginComponent, dialogConfig)
   }
-  
+
 }

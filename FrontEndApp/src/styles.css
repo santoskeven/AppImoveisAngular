@@ -4,3 +4,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.black-snackbar{
+  background: black !important;
+  color: white !important
+}
+
+.green-snackbar{
+  background: green !important;
+  color: white !important
+}
+
