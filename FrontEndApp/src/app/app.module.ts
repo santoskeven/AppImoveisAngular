@@ -17,6 +17,7 @@ import {MatSelectModule} from '@angular/material/select';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import { NgxUiLoaderModule, NgxUiLoaderConfig, SPINNER, PB_DIRECTION } from 'ngx-ui-loader';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 
 const ngxUiLoaderConfig: NgxUiLoaderConfig = {
   text: 'Carregando',
@@ -35,7 +36,8 @@ const ngxUiLoaderConfig: NgxUiLoaderConfig = {
   declarations: [
     AppComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    ForgotPasswordComponent
   ],
   imports: [
     BrowserModule,
