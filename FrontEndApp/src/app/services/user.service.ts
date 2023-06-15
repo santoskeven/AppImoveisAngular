@@ -12,8 +12,8 @@ export class UserService {
 
   signup(data:any){
     return this.httpclient.post(this.url+ 
-      "/user/signup", data,{
-        headers: new HttpHeaders().set('content-type', "aplication/json")
+      "user/signup", data,{
+        headers: new HttpHeaders().set('Content-Type', "application/json")
       })
 
   }

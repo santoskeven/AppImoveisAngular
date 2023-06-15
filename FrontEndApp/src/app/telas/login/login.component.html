@@ -1,1 +1,53 @@
-<p>login works!</p>
+<mat-toolbar color="primary">
+    <mat-toolbar-row fxLayout="row">
+        <span class="title-center">Inscrever-se</span>
+    </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-dialog-content class="mat-typographe">
+    <form [formGroup]="loginForm">
+        <div fxFlex fxLayout="column" >
+            <mat-form-field appearance="fill" fxFlex>
+                <mat-label>Name</mat-label>
+                <input matInput formControlName="name" require>
+                <mat-error *ngIf="loginForm.controls.name.tuoched && loginForm.controls.name.invalid">
+                    <span *ngIf="loginForm.controls.name.errors.require">this field is mandatory.</span>
+                    <span *ngIf="loginForm.controls.name.errors.pattern">this field is invalid.</span>
+                </mat-error>
+            </mat-form-field>
+
+            <mat-form-field apperarance="fill" fxFlex>
+                <mat-label>Email</mat-label>
+                <input matInput formControlName="email" require>
+                <mat-error *ngIf="loginForm.controls.email.tuoched && loginForm.controls.email.invalid">
+                    <span *ngIf="loginForm.controls.email.errors.require">this field is mandatory.</span>
+                    <span *ngIf="loginForm.controls.email.errors.pattern">this field is invalid.</span>
+                </mat-error>
+            </mat-form-field>
+
+            <mat-form-field apperarance="fill" fxFlex>
+                <mat-label>contact Number</mat-label>
+                <input matInput formControlName="contactNumber" require>
+                <mat-error *ngIf="loginForm.controls.contactNumber.tuoched && loginForm.controls.contactNumber.invalid">
+                    <span *ngIf="loginForm.controls.contactNumber.errors.require">this field is mandatory.</span>
+                    <span *ngIf="loginForm.controls.contactNumber.errors.pattern">this field is invalid.</span>
+                </mat-error>
+            </mat-form-field>
+
+            <mat-form-field apperarance="fill" fxFlex>
+                <mat-label>password</mat-label>
+                <input matInput formControlName="password" type="password" require>
+                <mat-error *ngIf="loginForm.controls.password.tuoched && loginForm.controls.password.invalid">
+                    <span *ngIf="loginForm.controls.password.errors.require">this field is mandatory.</span>
+                    <span *ngIf="loginForm.controls.password.errors.pattern">this field is invalid.</span>
+                </mat-error>
+            </mat-form-field>
+        </div>
+    </form>
+</mat-dialog-content>
+
+<mat-dialog-actions align="center">
+    <button mat-raised-button color="primary" type="submit" (click)="handleSubmit()"
+    [disabled]="!(loginForm.valid && loginForm.dirty)">Inscrever-se</button>
+    <button mat-raised-button color="primary" mat-dialog-close>fechar</button>
+</mat-dialog-actions>

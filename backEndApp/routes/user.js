@@ -85,7 +85,7 @@ router.post('/forgotPassword', (req, res) => {
                     from: process.env.EMAIL,
                     to: results[0].email,
                     subject: 'senha pelo sistema de gerenciamento de banco de imoveis',
-                    html: '<p> <br>seus detalhes de login para o sistema de gerenciamento de café</br> <br> <br>Email:</br> '+results[0].email+' <br> <br>senha:</br> '+results[0].password+' <br> <a href="http://localhost:4200/user/login">Click aqui para fazer login</a>  </p>'
+                    html: '<p> <br>seus detalhes de login para o sistema de gerenciamento do banco de imoveis</br> <br> <br>Email:</br> '+results[0].email+' <br> <br>senha:</br> '+results[0].password+' <br> <a href="http://localhost:4200/user/login">Click aqui para fazer login</a>  </p>'
                 }
 
                 transporter.sendMail(mailOptions, function(error, info){
@@ -125,7 +125,7 @@ router.patch('/update', auth.authenticateToken, checkRole.checkRole, (req, res) 
             if(results.affectedRows == 0){
                 return res.status(404).json({message: "id de usuário não existe!!!"});
             }
-            return res.status(200).json({message: "Usuário alterado com sucesso."})
+            return res.status(200).json({message: "status do usuário alterado com sucesso."})
         }
         else{
             return res.status(500).json(err);

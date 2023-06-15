@@ -72,9 +72,9 @@ router.patch('/update', auth.authenticateToken, checkRole.checkRole, (req, res, 
     });
 });
 
-router.delete('/delete:id/', auth.authenticateToken, checkRole.checkRole, (err, res, next) => {
-    const id = rep.params.id;
-    var query = "delete from produts where id=?";
+router.delete('/delete/:id', auth.authenticateToken, checkRole.checkRole, (req, res, next) => {
+    const id = req.params.id;
+    var query = "delete from products where id=?";
     connection.query(query, [id], (err, results) => {
         if(!err){
             if(results.affectedRows == 0){

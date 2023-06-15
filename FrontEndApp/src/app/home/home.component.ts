@@ -17,9 +17,7 @@ export class HomeComponent {
     // console.log('teste ')
     const dialogConfig = new MatDialogConfig()
     dialogConfig.width = '500px',
-    // dialogConfig.height = '500px',
-    dialogConfig.disableClose = false,
-    dialogConfig.hasBackdrop = false
+    // dialogConfig.height = '200px',
     this.dialog.open(LoginComponent, dialogConfig)
   }
 
