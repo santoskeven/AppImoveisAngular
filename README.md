@@ -9,6 +9,7 @@
 ## 1 - instalação do MYSQL
 
 + primeiramente você pode baixar o instalador <a href="https://dev.mysql.com/downloads/installer/" target="_blank">AQUI</a>
++ **OBS**: a versão que eu fiz a instação é a **(mysql-installer-community-8.0.33.0.msi)**, não tenho total certeza se na versão **(mysql-installer-web-community-8.0.33.0.msi)** ficará a mesma coisa ou se vai funcionar corretamente.
 + após baixar, faça a instalação
   
 ### passos que eu segui para instalar mysql na minha máquina
