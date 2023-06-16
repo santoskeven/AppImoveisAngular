@@ -93,5 +93,6 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123456';
 + após ter feito o clone, abra a pasta **FrontEndApp** no terminal integrado e execute:
 ```
 npm install
-``` 
+```
++ após finalizado você já pode executar o **ng serve** para iniciar a aplicação;
 
