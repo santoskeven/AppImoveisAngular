@@ -40,6 +40,11 @@
 CREATE DATABASE bancoimoveis;
 ``` 
 ### **ok, database criada, agora vamos criar as tables usadas**
++ antes de criar as tabelas execute:
+```
+use bancoimoveis;
+```
+### ok, agora vamos lá...
 ### para criar a tabela de usuário execute:
 ```
 CREATE TABLE user (
