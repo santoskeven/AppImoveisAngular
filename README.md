@@ -6,7 +6,7 @@
 
 # PRIMEIROS PASSOS 
 
-## + instalação do MYSQL
+## 1 - instalação do MYSQL
 
 + 1 - eclskdjflsjflsjfljslkfjlsfsf
 
