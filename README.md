@@ -30,6 +30,8 @@
 + em **APLLY CONFIGURATION** click em **EXECUTE**, após finalizar click em **FINISH**
 + em **PRODUCT CONFIGURATION** apenas click em **NEXT**
 + em **INSTALATON COMPLETE** desmarque a opção **start mysql workbench after sutup** e **start mysql Shell after setup**
+### apos finalizada a instalação abra o **MYSQL COMMAND LINE CLIENT**
++ insira a senha criada **123456**, e pronto, etapa finalizada, agora vamos dar seguencia...
 
 + quando finalizar feche o prompt que vai abrir e abra o **MYSQL COMMAND LINE CLIENT**
 + coloque a senha criada **123456**
