@@ -15,7 +15,7 @@
 + vá dando EXECUTE E NEXT e deixe tudo padrão
 + quando chegar em ACCOUNTS AND ROLES coloque a senha 123456
 + vá dando NEXT E EXECUTE
-+ em connect to server apenas coloque a senha 123456 e next
++ em **CONNECT TO SERVER** apenas coloque a senha 123456 e next
 
 + quando finalizar feche o prompt que vai abrir e abra o MYSQL COMMAND LINE CLIENT
 + execute isso : ' CREATE DATABASE bancoimoveis; ' *sem as aspaspara. criar o banco de dados usado no projeto
