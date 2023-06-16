@@ -20,9 +20,10 @@
 + quando finalizar feche o prompt que vai abrir e abra o **MYSQL COMMAND LINE CLIENT**
 + coloque a senha criada **123456**
 
-### ok, agora vamos criar os bancos usado no projeto
+### 2 - ok, agora vamos criar o DATABASE e as TABELAS usadas no projeto
 
-+ execute **CREATE DATABASE bancoimoveis;** para criar o banco de dados usado no projeto
++ no **MYSQL COMMAND LINE CLIENT** execute **CREATE DATABASE bancoimoveis;** para criar o banco de dados usado no projeto
++ 
 + assim que criar o banco execute: ' ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123456'; ' *sem aspas.
 
 ### assim que finalizar faça o clone do repositorio em sua maquina 
