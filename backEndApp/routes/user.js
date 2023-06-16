@@ -48,11 +48,11 @@ router.post('/login', (req, res) => {
             }
             else if(results[0].status === 'false'){
                 return res.status(401).json({message: "aguarde a aprovação do administrador"});
-            }
+            }   
             else if(results[0].password == user.password){
                 const response = {email: results[0].email, role: results[0].role}
                 const acesssToken = jwt.sign(response, process.env.ACESS_TOKEN,{expiresIn:'8h'});
-                res.status(200).json({token: acesssToken});
+                res.status(200).json({token: acesssToken, message: 'login feito com sucesso'});
             }
             else{
                 return res.status(400).json({message: "algo deu errado, por favor tente novamente mais tarde"});
@@ -78,7 +78,7 @@ router.post('/forgotPassword', (req, res) => {
     connection.query(query, [user.email], (err, results) => {
         if(!err){
             if(results.length <= 0){
-                return res.status(200).json({message: 'senha enviada com sucesso para o seu email (top)'});
+                return res.status(200).json({message: 'senha enviada com sucesso para o seu email'});
             }
             else{
                 var mailOptions = {
@@ -97,7 +97,7 @@ router.post('/forgotPassword', (req, res) => {
                     }
                 });
 
-                return res.status(200).json({message: 'senha enviada com sucesso para o seu email (bottom)'});
+                return res.status(200).json({message: 'senha enviada com sucesso para o seu email'});
 
             }
         }
