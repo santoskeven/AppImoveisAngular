@@ -12,11 +12,24 @@
 + **OBS**: a versão que eu fiz a instação é a **(mysql-installer-community-8.0.33.0.msi)**, não tenho total certeza se na versão **(mysql-installer-web-community-8.0.33.0.msi)** ficará a mesma coisa ou se vai funcionar corretamente.
 + após baixar, faça a instalação
   
-### passos que eu segui para instalar mysql na minha máquina
-+ vá dando **EXECUTE** e **NEXT** e deixe tudo padrão
-+ quando chegar em **ACCOUNTS AND ROLES** coloque a senha **123456**
-+ vá dando **NEXT** e **EXECUTE**
-+ em **CONNECT TO SERVER** apenas coloque a senha **123456** e **NEXT**  
+### passos que eu segui para instalar mysql na minha máquina:
++ quando abrir o isntalador em **CHO0SING A SETUP TYPE** deixe a opçao **DEVELOPER DEFAULT** selecionada e click em **NEXT**
++ em **DOWNLOADS** clck em **EXECUTE** e aguarde, após finalizado click em **NEXT**
++ em **INSTALLATION** click em **EXECUTE** e aguarde a instalação, após finalizar click em **NEXT**
++ em **PRODUCT CONFIGURATION** click em **NEXT**
++ em **TYPE AND NETWORKING** apenas click em **NEXT**
++ em **AUTHENTICATION METHOD** apenas click em **NEXT**
++ em **ACOUNTS AND ROLES** coloque a **mysql root password** como **123456**, e click em **NEXT**
++ em **WINDOWS SERVICE** apenas click em **NEXT**
++ em **SERVER FILE PERMISSIONS** apenas click em **NEXT**
++ em **APLLY CONFIGURATION** click em **EXECUTE**, após finalizar click em **FINISH**
++ em **PRODUCT CONFIGURATION** apenas click em **NEXT**
++ em **MYSQL ROUTER CONFIGURATION** apenas click em **FINISH**
++ em **PRODUCT CONFIGURATION** apenas click em **NEXT**
++ em **CONNECT TO SERVER** em **password** insira a senha **123456** e click em **CHECK** e cilck em **NEXT**
++ em **APLLY CONFIGURATION** click em **EXECUTE**, após finalizar click em **FINISH**
++ em **PRODUCT CONFIGURATION** apenas click em **NEXT**
++ em **INSTALATON COMPLETE** desmarque a opção **start mysql workbench after sutup** e **start mysql Shell after setup**
 
 + quando finalizar feche o prompt que vai abrir e abra o **MYSQL COMMAND LINE CLIENT**
 + coloque a senha criada **123456**
