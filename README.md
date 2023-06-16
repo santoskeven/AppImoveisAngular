@@ -25,7 +25,7 @@
 + no **MYSQL COMMAND LINE CLIENT** execute **CREATE DATABASE bancoimoveis;** para criar o banco de dados usado no projeto
 ### **ok, database criada, agora vamos criar as tables usadas**
 ### para criar a tabela de usuário execute:
-````
+```
 CREATE TABLE user (
     id int NOT NULL PRIMARY KEY AUTO_INCREMENT,
     name varchar(250),
@@ -35,9 +35,28 @@ CREATE TABLE user (
     status varchar(20),
     role varchar(20)
 );
-````
+```
+### para cricar a tabela de categoria execute:
+```
+CREATE TABLE category (
+    id int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    name varchar(250) NOT NULL  
+);
+```
 
-+ assim que criar o banco execute: ' ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123456'; ' *sem aspas.
+### para criar a tabela de produtos execute:
+```
+CREATE TABLE products(
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    name varchar(250),
+    categoryID integer NOT NULL,
+    description varchar(255),
+    price integer,
+    amount integer,
+    status varchar(20),
+);
+```
+### ok, por ultimo execute: ***ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123456';***
 
 ### assim que finalizar faça o clone do repositorio em sua maquina 
 + assim que finalizar execute na pasta npm install na pasta FrontEndApp
