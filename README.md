@@ -11,8 +11,8 @@
 + primeiramente você pode baixar o instalador <a href="https://dev.mysql.com/downloads/installer/" target="_blank">AQUI</a>
 + após baixar, faça a instalação
   
-### passos que eu segui para instalar o mey mysql na minha máquina
-+ 
+### passos que eu segui para instalar mysql na minha máquina
++ em CLOSSING A SETUP TYPE -> DEVELOPER DEFAULT -> CLICK EM "NEXT" 
 
 
 
