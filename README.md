@@ -99,4 +99,7 @@ npm install
 ```
 npm start
 ```
-
+### para que você tenha acesso total a aplicação vamos criar um usuário administrado, para isso abra o **MYSQL COMMAND LINE CLIENT** e execute:
+```
+insert into user(name, contactNumber, email, password, status, role) value('seu nome', 'seu número', 'seu email', 'sua senha', 'true', 'admin');
+```
