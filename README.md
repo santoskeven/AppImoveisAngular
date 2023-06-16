@@ -8,7 +8,7 @@
 
 ## 1 - instalação do MYSQL
 
-### primeiramente você pode baixar o instalador <a href="https://dev.mysql.com/downloads/installer/">AQUI</a>
+### primeiramente você pode baixar o instalador <a href="https://dev.mysql.com/downloads/installer/" target="_blank">AQUI</a>
 
 
 
