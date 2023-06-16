@@ -23,7 +23,18 @@
 ## 2 - ok, agora vamos criar o DATABASE e as TABELAS usadas no projeto
 
 + no **MYSQL COMMAND LINE CLIENT** execute **CREATE DATABASE bancoimoveis;** para criar o banco de dados usado no projeto
-+ 
++ **ok, database criada, agora vamos criar as tables usadas**
++ execute:
+  CREATE TABLE user (
+    id int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    name varchar(250),
+    contactNumber varchar(20),
+    email varchar(50),
+    password varchar(250),
+    status varchar(20),
+    role varchar(20)
+);
+para criar a  tabela de usuário
 + assim que criar o banco execute: ' ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123456'; ' *sem aspas.
 
 ### assim que finalizar faça o clone do repositorio em sua maquina 
