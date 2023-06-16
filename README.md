@@ -1,6 +1,6 @@
 # App para corretor de imoveis Angular
 
-# Olá, é um prazer te-lo em minha aplicação, tentarei lhe guiar da melhor forma possível para usar a aplicação sem problemas, vamos?!!
+# Olá, é um prazer te-lo em minha aplicação, tentarei lhe guiar da melhor forma possível para usar a aplicação sem problemas, vamos começão?!!
 
 ### vamos considerar que você já tem a base do desenvolvimento com essas ferramentas instaladas em sua máquina (node, typescript, npm...)
 
