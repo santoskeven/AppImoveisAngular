@@ -95,4 +95,8 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123456';
 npm install
 ```
 + após finalizado você já pode executar o **ng serve** para iniciar a aplicação;
++ abra a pasta **BackEndApp** e execute:
+```
+npm start
+```
 
