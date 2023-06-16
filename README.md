@@ -8,7 +8,7 @@
 
 ## 1 - instalação do MYSQL
 
-+ 1 - eclskdjflsjflsjfljslkfjlsfsf
+### primeiramente você pode baixar o instalador <a href="https://dev.mysql.com/downloads/installer/">AQUI</a>
 
 
 
