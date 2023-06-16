@@ -12,7 +12,10 @@
 + após baixar, faça a instalação
   
 ### passos que eu segui para instalar mysql na minha máquina
-+ em CLOSSING A SETUP TYPE -> SELECIONE DEVELOPER DEFAULT -> E CLICK EM "NEXT" 
++ em CLOSSING A SETUP TYPE -> selecione DEVELOPER DEFAULT -> E CLICK EM "NEXT"
++ em  PATH CONFLITS -> apenas clic em NEXT
++ em DOWLOAD click em EXECUTE para fazer as instalações -> assim que finalizar click em NEXT
++ em INSTALLATION click em EXECUTE para os downloads serem instalados
 
 
 
