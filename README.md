@@ -84,5 +84,10 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123456';
 
 ### blzz, mais uma estapa concluída, agora vamos para a proxima etapa
 
-## 2 - agora vamos clonar o repositorio do projeto
+## 3 - agora vamos clonar o repositorio do projeto
++ crie uma pasta e abra no seu editor de código
++ abra o terminal integrado e execute:
+  ```
+  git clone https://github.com/santoskeven/AppImoveisAngular
+  ```
 
