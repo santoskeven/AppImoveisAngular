@@ -22,7 +22,10 @@
 
 ## 2 - ok, agora vamos criar o DATABASE e as TABELAS usadas no projeto
 
-+ no **MYSQL COMMAND LINE CLIENT** execute **CREATE DATABASE bancoimoveis;** para criar o banco de dados usado no projeto
++ para criar o banco de dados usado no projeto execute no **MYSQL COMMAND LINE CLIENT**:
+```
+CREATE DATABASE bancoimoveis;
+``` 
 ### **ok, database criada, agora vamos criar as tables usadas**
 ### para criar a tabela de usuário execute:
 ```
