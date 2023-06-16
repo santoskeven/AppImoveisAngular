@@ -12,10 +12,17 @@
 + após baixar, faça a instalação
   
 ### passos que eu segui para instalar mysql na minha máquina
-+ em CLOSSING A SETUP TYPE -> selecione DEVELOPER DEFAULT -> E CLICK EM "NEXT"
-+ em  PATH CONFLITS -> apenas clic em NEXT
-+ em DOWLOAD click em EXECUTE para fazer as instalações -> assim que finalizar click em NEXT
-+ em INSTALLATION click em EXECUTE para os downloads serem instalados
++ vá dando EXECUTE E NEXT e deixe tudo padrão
++ quando chegar em ACCOUNTS AND ROLES coloque a senha 123456
++ vá dando NEXT E EXECUTE
++ em connect to server apenas coloque a senha 123456 e next
+
++ quando finalizar feche o prompt que vai abrir e abra o MYSQL COMMAND LINE CLIENT
++ execute isso : ' CREATE DATABASE bancoimoveis; ' *sem as aspaspara. criar o banco de dados usado no projeto
++ assim que criar o banco execute: ' ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123456'; ' *sem aspas.
+
+### assim que finalizar faça o clone do repositorio em sua maquina 
++ assim que finalizar execute na pasta npm install na pasta FrontEndApp
 
 
 
