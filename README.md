@@ -20,7 +20,7 @@
 + quando finalizar feche o prompt que vai abrir e abra o **MYSQL COMMAND LINE CLIENT**
 + coloque a senha criada **123456**
 
-### 2 - ok, agora vamos criar o DATABASE e as TABELAS usadas no projeto
+## 2 - ok, agora vamos criar o DATABASE e as TABELAS usadas no projeto
 
 + no **MYSQL COMMAND LINE CLIENT** execute **CREATE DATABASE bancoimoveis;** para criar o banco de dados usado no projeto
 + 
