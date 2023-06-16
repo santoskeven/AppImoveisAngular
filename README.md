@@ -53,7 +53,7 @@ CREATE TABLE products(
     description varchar(255),
     price integer,
     amount integer,
-    status varchar(20),
+    status varchar(20)
 );
 ```
 ### ok, por ultimo execute: ***ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123456';***
