@@ -33,9 +33,6 @@
 ### apos finalizada a instalação abra o **MYSQL COMMAND LINE CLIENT**
 + insira a senha criada **123456**, e pronto, etapa finalizada, agora vamos dar seguencia...
 
-+ quando finalizar feche o prompt que vai abrir e abra o **MYSQL COMMAND LINE CLIENT**
-+ coloque a senha criada **123456**
-
 ## 2 - ok, agora vamos criar o DATABASE e as TABELAS usadas no projeto
 
 + para criar o banco de dados usado no projeto execute no **MYSQL COMMAND LINE CLIENT**:
