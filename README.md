@@ -57,7 +57,9 @@ CREATE TABLE products(
 );
 ```
 ### ok, por ultimo execute: 
-```ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123456';```
+```
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123456';
+```
 
 ### assim que finalizar faça o clone do repositorio em sua maquina 
 + assim que finalizar execute na pasta npm install na pasta FrontEndApp
