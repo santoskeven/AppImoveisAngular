@@ -1,10 +1,10 @@
-import { SnackbarService } from './../../services/snackbar.service';
-import { UserService } from './../../services/user.service';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatDialogRef } from '@angular/material/dialog';
 import { Router } from '@angular/router';
-import { NgxUiLoaderService } from 'ngx-ui-loader';
+import { NgxUiLoaderConfig, NgxUiLoaderService } from 'ngx-ui-loader';
+import { SnackbarService } from 'src/app/services/snackbar.service';
+import { UserService } from 'src/app/services/user.service';
 import { GlobalConstants } from 'src/app/shared/global-constants';
 
 @Component({
@@ -17,37 +17,33 @@ export class LoginComponent {
   loginForm:any = FormGroup;
   responseMessage:any;
 
-  constructor (private formbuider:FormBuilder,
-    private route: Router,
-    private userService:UserService,
-    private snackbarService:SnackbarService,
-    private dialogRef:MatDialogRef<LoginComponent>,
-    private ngxService:NgxUiLoaderService){}
+  constructor(private formBuilder: FormBuilder,
+    private router: Router,
+    private userService: UserService,
+    private dialogRef: MatDialogRef<LoginComponent>,
+    private ngxService: NgxUiLoaderService,
+    private snackbarService: SnackbarService){}
 
     ngOnInit(): void{
-      this.loginForm = this.formbuider.group({
-        name:[null, [Validators.required, Validators.pattern(GlobalConstants.nameRegex)]],
+      this.loginForm = this.formBuilder.group({
         email:[null, [Validators.required, Validators.pattern(GlobalConstants.emailRegex)]],
-        contactNumber:[null, [Validators.required, Validators.pattern(GlobalConstants.contactNumberRegex)]],
-        password:[null, [Validators.required]],
+        password: [null, Validators.required]
       })
     }
 
     handleSubmit(){
       this.ngxService.start();
-      let FormData = this.loginForm.value;
+      let formData = this.loginForm.value;
       let data = {
-        name: FormData.name,
-        email:FormData.email,
-        contactNumber:FormData.contactNumber,
-        password:FormData.password
+        email: formData.email,
+        password: formData.password
       }
-      this.userService.signup(data).subscribe((response:any) => {
+      this.userService.login(data).subscribe((response:any) => {
         this.ngxService.stop();
-        this.dialogRef.close();
         this.responseMessage = response?.message;
-        this.snackbarService.openSnackBar(this.responseMessage, '');
-        this.route.navigate(['/']);
+        this.dialogRef.close();
+        localStorage.setItem('token', response.token);
+        this.router.navigate(['/dashboard'])
       }, (error) => {
         this.ngxService.stop();
         if(error.error?.message){

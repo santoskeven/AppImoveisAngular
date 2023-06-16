@@ -1,10 +1,10 @@
-import { SnackbarService } from './../services/snackbar.service';
-import { UserService } from './../services/user.service';
+import { SnackbarService } from 'src/app/services/snackbar.service';
+import { UserService } from 'src/app/services/user.service';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatDialogRef } from '@angular/material/dialog';
 import { NgxUiLoaderService } from 'ngx-ui-loader';
-import { GlobalConstants } from '../shared/global-constants';
+import { GlobalConstants } from 'src/app/shared/global-constants';
 
 @Component({
   selector: 'app-forgot-password',

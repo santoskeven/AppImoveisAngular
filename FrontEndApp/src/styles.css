@@ -12,6 +12,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   color: white !important
 }
 
+.red-snackbar{
+  background: red !important;
+  color: black !important
+}
+
 .green-snackbar{
   background: green !important;
   color: white !important

@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { MatDialog, MatDialogConfig } from "@angular/material/dialog"
+import { SignupComponent } from '../telas/signup/signup.component';
+import { ForgotPasswordComponent } from '../telas/forgot-password/forgot-password.component'; 
 import { LoginComponent } from '../telas/login/login.component';
-import { ForgotPasswordComponent } from '../forgot-password/forgot-password.component';
 
 @Component({
   selector: 'app-home',
@@ -19,13 +20,19 @@ export class HomeComponent {
     const dialogConfig = new MatDialogConfig()
     dialogConfig.width = '500px',
     // dialogConfig.height = '200px',
-    this.dialog.open(LoginComponent, dialogConfig)
+    this.dialog.open(SignupComponent, dialogConfig)
   }
 
   forgotPasswordAction(){
     const dialogConfig = new MatDialogConfig()
     dialogConfig.width = '500px';
     this.dialog.open(ForgotPasswordComponent, dialogConfig );
+  }
+
+  LoginUser(){
+    const dialogConfig = new MatDialogConfig();
+    dialogConfig.width = '500px';
+    this.dialog.open(LoginComponent, dialogConfig);
   }
 
 }

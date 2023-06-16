@@ -1,7 +1,7 @@
 export class GlobalConstants{
 
   //mensagem
-  public static genericError:string = "mensagem de teste: tente novamente mais tarde ";
+  public static genericError:string = "tente novamente mais tarde ";
 
   //mensagem
   public static nameRegex:string = '[a-zA-Z0-9 ]*';

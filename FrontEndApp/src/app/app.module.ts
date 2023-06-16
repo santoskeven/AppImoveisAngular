@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { LoginComponent } from './telas/login/login.component';
+import { SignupComponent } from './telas/signup/signup.component'; 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule, MatDialog } from '@angular/material/dialog'
 import { HttpClientModule } from '@angular/common/http'
@@ -17,7 +17,9 @@ import {MatSelectModule} from '@angular/material/select';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import { NgxUiLoaderModule, NgxUiLoaderConfig, SPINNER, PB_DIRECTION } from 'ngx-ui-loader';
-import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { ForgotPasswordComponent } from './telas/forgot-password/forgot-password.component';
+import { LoginComponent } from './telas/login/login.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const ngxUiLoaderConfig: NgxUiLoaderConfig = {
   text: 'Carregando',
@@ -36,8 +38,10 @@ const ngxUiLoaderConfig: NgxUiLoaderConfig = {
   declarations: [
     AppComponent,
     HomeComponent,
+    ForgotPasswordComponent,
+    SignupComponent,
     LoginComponent,
-    ForgotPasswordComponent
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

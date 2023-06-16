@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Routes } from '@angular/router';
-import { LoginComponent } from './telas/login/login.component';
+import { SignupComponent } from './telas/signup/signup.component';
 
 @Component({
   selector: 'app-root',
