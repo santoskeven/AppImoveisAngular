@@ -31,4 +31,8 @@ export class UserService {
       })
   }
 
+  checkToken(){
+    return this.httpclient.get(this.url + 'user/checkToken')
+  }
+
 }

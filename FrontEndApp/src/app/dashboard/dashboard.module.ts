@@ -1,18 +1,16 @@
-import { DashboardRoutes } from './daahboard.routing';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard.component';
-
+import { RouterModule } from '@angular/router';
+import { DashboardRoutes } from './dashboard.routing';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
-  declarations: [
-    DashboardComponent
-  ],
+  declarations: [DashboardComponent],
   imports: [
     CommonModule,
+    MatCardModule,
     RouterModule.forChild(DashboardRoutes)
   ]
 })
-export class DashboardModule {
-}
+export class DashboardModule { }

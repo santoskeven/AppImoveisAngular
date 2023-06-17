@@ -3,6 +3,8 @@ export class GlobalConstants{
   //mensagem
   public static genericError:string = "tente novamente mais tarde ";
 
+  public static unauthoized:string = 'você não tem permissão para acessar essa página';
+
   //mensagem
   public static nameRegex:string = '[a-zA-Z0-9 ]*';
 

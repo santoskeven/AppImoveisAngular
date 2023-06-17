@@ -8,7 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { SignupComponent } from './telas/signup/signup.component'; 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule, MatDialog } from '@angular/material/dialog'
-import { HttpClientModule } from '@angular/common/http'
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http'
 import {MatToolbarModule} from '@angular/material/toolbar'; 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
@@ -19,7 +19,9 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { NgxUiLoaderModule, NgxUiLoaderConfig, SPINNER, PB_DIRECTION } from 'ngx-ui-loader';
 import { ForgotPasswordComponent } from './telas/forgot-password/forgot-password.component';
 import { LoginComponent } from './telas/login/login.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { DashboardModule } from './dashboard/dashboard.module';
+// import { DashboardComponent } from './dashboard/dashboard.component';
+import { TokenInterceptorInterceptor } from './services/token-interceptor.interceptor';
 
 const ngxUiLoaderConfig: NgxUiLoaderConfig = {
   text: 'Carregando',
@@ -38,10 +40,9 @@ const ngxUiLoaderConfig: NgxUiLoaderConfig = {
   declarations: [
     AppComponent,
     HomeComponent,
-    ForgotPasswordComponent,
-    SignupComponent,
-    LoginComponent,
-    DashboardComponent
+      ForgotPasswordComponent,
+      SignupComponent,
+      LoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -56,13 +57,14 @@ const ngxUiLoaderConfig: NgxUiLoaderConfig = {
     MatSelectModule,
     MatInputModule,
     MatSnackBarModule,
+    DashboardModule,
     NgxUiLoaderModule.forRoot(ngxUiLoaderConfig)
   ],
   exports: [
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [HomeComponent],
+  providers: [HttpClientModule,{provide:HTTP_INTERCEPTORS, useClass:TokenInterceptorInterceptor, multi: true}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

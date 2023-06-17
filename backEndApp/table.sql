@@ -22,5 +22,5 @@ CREATE TABLE products(
     description varchar(255),
     price integer,
     amount integer,
-    status varchar(20),
-)
+    status varchar(20)
+);

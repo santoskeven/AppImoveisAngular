@@ -3,6 +3,8 @@ import { MatDialog, MatDialogConfig } from "@angular/material/dialog"
 import { SignupComponent } from '../telas/signup/signup.component';
 import { ForgotPasswordComponent } from '../telas/forgot-password/forgot-password.component'; 
 import { LoginComponent } from '../telas/login/login.component';
+import { Router } from '@angular/router';
+import { UserService } from '../services/user.service';
 
 @Component({
   selector: 'app-home',
@@ -11,8 +13,20 @@ import { LoginComponent } from '../telas/login/login.component';
 })
 export class HomeComponent {
 
-  constructor(private dialog:MatDialog)
-  {
+  constructor(private dialog:MatDialog,
+    private router:Router,
+    private userService: UserService,
+    ){}
+
+  ngOnInit(): void{
+    if(localStorage.getItem('token') != null){
+      this.userService.checkToken().subscribe((response:any) => {
+        this.router.navigate(['/dashboard']);
+      }, (error:any) => {
+        console.log(error)
+        console.log(localStorage.getItem('token'))
+      })
+    }
   }
 
   SigNupClient(){

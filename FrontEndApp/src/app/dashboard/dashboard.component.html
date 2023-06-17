@@ -1,1 +1,29 @@
-<p>dashboard works!</p>
+<body>
+    <mat-card>
+        <b><span>Dasboard</span></b>
+    </mat-card>
+
+    <br>
+
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <div class="container">
+                    <h2 class="title">Total category:</h2>
+                    <h1 class="title">{{data?.category}}</h1>
+                    <button class="button" [routerLink]="['/dashboard/category']">ver categoria</button>
+                </div>
+            </div>
+        </div>  
+        <div class="column">
+            <div class="card">
+                <div class="container">
+                    <h2 class="title">Total product:</h2>
+                    <h1 class="title">{{data?.product}}</h1>
+                    <button class="button" [routerLink]="['/dashboard/product']">ver produto</button>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+</body>
